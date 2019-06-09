@@ -22,6 +22,7 @@ public class tableonecontroller {
 	@Autowired
 	private tableonerepo trepo;
 	
+	@CrossOrigin(origins = "*")
 	@GetMapping("/getmethod")
 	public List<tableonemodel> methodname(){
 		return trepo.findAll();
